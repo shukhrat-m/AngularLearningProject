@@ -21,10 +21,6 @@ export class NavComponent implements OnInit {
     .subscribe(
       response => {
         this.router.navigateByUrl('/members')
-      },
-      err => {
-        console.log(err);
-        this.toastr.error(err.error)
       }
     )
   }
